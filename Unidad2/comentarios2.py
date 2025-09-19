@@ -11,7 +11,7 @@ def saludo(nombre):
         str: mensaje de saludo
     """
     # El bloque siguiente está indentado 4 espacios
-     mensaje = f"¡Hola, {nombre}!"
+    mensaje = f"¡Hola, {nombre}!"
     return mensaje          # Comentario al final de la línea
 
 
@@ -20,7 +20,7 @@ def main():
    nombres = ["Ana", "Luis", "María"]
 
     # Bucle for con su propio nivel de indentación
-  for n in nombres:
+    for n in nombres:
         # Llamamos a la función saludo y mostramos el resultado
       print(saludo(n))   # Comentario corto al final
 
@@ -29,5 +29,5 @@ def main():
     #print("Esto provocaría un IndentationError")   # <-- sin sangría
 
 # Punto de entrada del script
-    if __name__ == "__main__":
+if __name__ == "__main__":
     main()
