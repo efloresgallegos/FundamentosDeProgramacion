@@ -23,7 +23,7 @@ class Libro:
         return f'"{self.titulo}" de {self.autor} [{estado}]'
 
 
- class Biblioteca:
+class Biblioteca:
     def __init__(self):
         self.catalogo = []   
 
