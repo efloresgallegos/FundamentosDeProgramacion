@@ -30,6 +30,8 @@ auto1 = Auto("Toyota", "Corolla", 2022, "Rojo")
 moto1 = Moto("Yamaha", "FZ", 2021, "Negra")
 camion1 = Camion("Volvo", "FH", 2020, "Blanco")
 
+#Otra instancia de cada clase
+
 # Visualización
 print(auto1)
 print(moto1)

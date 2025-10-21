@@ -16,6 +16,7 @@ class Auto:
             self.__velocidad_actual += aumento
 
     # método para frenar
+    # 
     def frenar(self, reduccion):
         if self.__velocidad_actual - reduccion < 0:
             self.__velocidad_actual = 0
@@ -33,3 +34,10 @@ print("Velocidad actual:", auto1.get_velocidad_actual(), "km/h")
 
 auto1.frenar(100)
 print("Velocidad actual:", auto1.get_velocidad_actual(), "km/h")
+
+
+#Encapsulamiento
+
+# __marca = variables privadas
+# _marca = variables que se pueden mandar llamar declarando primero a la clase o función
+# marca = variables públicas
