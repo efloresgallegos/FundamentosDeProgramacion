@@ -39,7 +39,7 @@ class App(QWidget):
     def accion_agregar_libro(self):
         titulo = self.titulo.text()
         autor = self.autor.text()
-        mensaje = self.guardar.agregar(titulo, autor)
+        mensaje = self.guardar.guardar_libro(titulo, autor)
         self.resultado.setText(mensaje)
 
     def accion_consultar_libros(self):
