@@ -1,4 +1,9 @@
 # -*- coding: utf-8 -*-
+''' Realizar lo siguiente:
+    1. Comentar los atributos de cada una de las clases.
+    2. Agregar atributos a cada una de las clases (con base en sus diagramas de clase). Estos
+    atributos tienen que recibir las mismas acciones que los demás.
+    3. Guardar los datos en un archivo .txt '''
 
 class Alumno:
     #Agregar
@@ -26,7 +31,7 @@ class Universidad:
         self.nombre = nombre
         self.carreras = []      
         self.alumnos = []       
-        self.profesores = []    
+        self.profesores = []     
 
     # ------------------- Gestión de carreras -------------------
     def agregar_carrera(self, carrera):
@@ -67,7 +72,7 @@ class Carrera:
 class Materia:
     def __init__(self, nombre: str, carrera: Carrera, calificacion_final: float = None):
         self.nombre = nombre
-        self.carrera = carrera                 # Instancia de Carrera
+        self.carrera = carrera                 
         self.calificacion_final = calificacion_final
 
     def __repr__(self):
@@ -77,7 +82,7 @@ class Materia:
 class Profesor:
     def __init__(self, nombre: str, materia: Materia):
         self.nombre = nombre
-        self.materia = materia                 # Materia que imparte
+        self.materia = materia                 
 
     def registra_calificacion(self, alumno: Alumno, calificacion: float):
         alumno.calificaciones[self.materia.nombre] = calificacion
